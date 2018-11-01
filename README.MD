@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/alphamu/PinEntryEditText.svg?branch=master)](https://travis-ci.org/alphamu/PinEntryEditText)
+[![Build Status](https://travis-ci.org/Daniil-Pavenko/PinEntryEditText.svg?branch=master)](https://travis-ci.org/Daniil-Pavenko/PinEntryEditText)
+
+[![](https://jitpack.io/v/Daniil-Pavenko/PinEntryEditText.svg)](https://jitpack.io/#Daniil-Pavenko/PinEntryEditText)
 
 # PinEntryEditText for Android
 
@@ -44,7 +46,7 @@ buildscript {
 **Jetpack** support in version 2.0 [![Download](https://api.bintray.com/packages/alphamu/customwidgets/PinEntryEditText/images/download.svg)](https://bintray.com/alphamu/customwidgets/PinEntryEditText/_latestVersion):
 
     dependencies {
-        implementation ('com.alimuzaffar.lib:pinentryedittext:2.0.6') {
+        implementation ('com.alimuzaffar.lib:pinentryedittext:2.0.7') {
             // Exclude is only needed if you already have
             // androidx.appcompat as a dependency in your app.
             exclude group: 'androidx.appcompat', module: 'appcompat'
