@@ -252,12 +252,7 @@ public class PinEntryEditText extends AppCompatEditText {
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-        mOriginalTextColors = getTextColors();
-        if (mOriginalTextColors != null) {
-            mLastCharPaint.setColor(mOriginalTextColors.getDefaultColor());
-            mCharPaint.setColor(mOriginalTextColors.getDefaultColor());
-            mSingleCharPaint.setColor(getCurrentHintTextColor());
-        }
+        updateTextColor();
         int availableWidth = getWidth() - ViewCompat.getPaddingEnd(this) - ViewCompat.getPaddingStart(this);
         if (mSpace < 0) {
             mCharSize = (availableWidth / (mNumChars * 2 - 1));
@@ -294,6 +289,27 @@ public class PinEntryEditText extends AppCompatEditText {
                 startX += rtlFlag * (mCharSize + mSpace);
             }
             mCharBottom[i] = mLineCoords[i].bottom - mTextBottomPadding;
+        }
+    }
+
+    @Override
+    public void setTextColor(ColorStateList colors) {
+        super.setTextColor(colors);
+        updateTextColor();
+    }
+
+    @Override
+    public void setTextColor(int color) {
+        super.setTextColor(color);
+        updateTextColor();
+    }
+
+    private void updateTextColor() {
+        mOriginalTextColors = getTextColors();
+        if (mOriginalTextColors != null) {
+            mLastCharPaint.setColor(mOriginalTextColors.getDefaultColor());
+            mCharPaint.setColor(mOriginalTextColors.getDefaultColor());
+            mSingleCharPaint.setColor(getCurrentHintTextColor());
         }
     }
 
