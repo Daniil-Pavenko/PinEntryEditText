@@ -2,11 +2,10 @@ package com.alimuzaffar.sample.pin;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.content.res.ResourcesCompat;
 import android.widget.Toast;
 
 import com.alimuzaffar.lib.pin.PinEntryEditText;
-
-import androidx.core.content.res.ResourcesCompat;
 
 public class AnimatedEditTextWidgetsActivity extends Activity {
 
