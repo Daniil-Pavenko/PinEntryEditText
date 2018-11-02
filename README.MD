@@ -2,6 +2,9 @@
 
 [![](https://jitpack.io/v/Daniil-Pavenko/PinEntryEditText.svg)](https://jitpack.io/#Daniil-Pavenko/PinEntryEditText)
 
+### Fixes
+- Fix change color of text programmatically.
+
 # PinEntryEditText for Android
 
 This repository contains `PinEntryEditText` which extends the behaviour
@@ -43,10 +46,10 @@ buildscript {
 ### Gradle
 
 
-**Jetpack** support in version 2.0 [![Download](https://api.bintray.com/packages/alphamu/customwidgets/PinEntryEditText/images/download.svg)](https://bintray.com/alphamu/customwidgets/PinEntryEditText/_latestVersion):
+**Jetpack** support in version 2.0 [![](https://jitpack.io/v/Daniil-Pavenko/PinEntryEditText.svg)](https://jitpack.io/#Daniil-Pavenko/PinEntryEditText)
 
     dependencies {
-        implementation ('com.alimuzaffar.lib:pinentryedittext:2.0.7') {
+        implementation ('com.alimuzaffar.lib:pinentryedittext:2.0.8') {
             // Exclude is only needed if you already have
             // androidx.appcompat as a dependency in your app.
             exclude group: 'androidx.appcompat', module: 'appcompat'
@@ -77,21 +80,21 @@ as your code is likely to use a different version from the library.
     android:id="@+id/txt_pin_entry"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:cursorVisible="false" //recommended
+    android:cursorVisible="false" 
     android:digits="1234567890"
     android:inputType="number"
-    android:maxLength="4" //required
-    android:textIsSelectable="false" //recommended
+    android:maxLength="4" 
+    android:textIsSelectable="false" 
     android:textSize="20sp"
-    app:pinBackgroundDrawable="@drawable/bg_pin" //optional, use your own pin char background
-    app:pinAnimationType="popIn|fromBottom|none" //optional, default popIn
-	app:pinCharacterMask="*" //optional, default bullet
-	app:pinSingleCharHint="#" //optional, hint for each characters
-	app:pinTextBottomPadding="@dimen/space" //optional, space between character and bottom line.
-	app:pinLineStroke="2dp" //the stroke (height) of the bottom line by default.
-	app:pinLineStrokeSelected="4dp" //the stroke (height) of the bottom line when field is focused.
-	app:pinBackgroundIsSquare="true|false" //optional, if you want the background drawable to be a square or circle width of each digit will be set to match the height of the widget.
-    app:pinLineColors="@color/pin_line_colors" //optional
+    app:pinBackgroundDrawable="@drawable/bg_pin" 
+    app:pinAnimationType="popIn|fromBottom|none" 
+	app:pinCharacterMask="*" 
+	app:pinSingleCharHint="#"
+	app:pinTextBottomPadding="@dimen/space" 
+	app:pinLineStroke="2dp" 
+	app:pinLineStrokeSelected="4dp" 
+	app:pinBackgroundIsSquare="true|false" 
+    app:pinLineColors="@color/pin_line_colors" 
     android:layoutDirection="ltr|rtl"
     />
 ```
