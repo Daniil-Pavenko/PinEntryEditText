@@ -16,7 +16,7 @@ ext {
     siteUrl = 'https://github.com/Daniil-Pavenko/PinEntryEditText'
     gitUrl = 'https://github.com/Daniil-Pavenko/PinEntryEditText.git'
 
-    libraryVersion = '2.0.9'
+    libraryVersion = '2.0.9.1'
 
     developerId = 'Daniil-Pavenko'
     developerName = 'Daniil Pavenko'
@@ -34,8 +34,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 4
-        versionName '2.0.9'
+        versionCode 5
+        versionName '2.0.9.1'
     }
     buildTypes {
         release {

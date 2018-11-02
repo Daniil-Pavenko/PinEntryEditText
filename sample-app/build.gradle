@@ -26,7 +26,5 @@ dependencies {
     implementation fileTree(include: ['*.jar, *.aar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
     implementation "com.android.support:appcompat-v7:28.0.0"
-    implementation (project(':pinentryedittext')) {
-        exclude group: 'androidx.appcompat', module: 'appcompat'
-    }
+    implementation (project(':pinentryedittext'))
 }
